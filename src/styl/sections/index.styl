@@ -53,3 +53,46 @@
 
   &::after
     margin-top remify(43)
+
+.homepage-section
+  display flex
+  align-items center
+
+  &:nth-of-type(2n + 1)
+    background #f3f3f3
+
+  &:nth-of-type(1) .homepage-section__image
+    background-image url('../img/backgrounds/merchantile-bg.jpg')
+
+  &:nth-of-type(2) .homepage-section__image
+    background-image url('../img/backgrounds/civil-bg.jpg')
+
+  &:nth-of-type(3) .homepage-section__image
+    background-image url('../img/backgrounds/administrative-bg.jpg')
+
+.homepage-section__content
+  flex-basis 59.6%
+  padding remify(61) remify(98) remify(66) remify(58)
+
+.homepage-section__title
+  color #0c0a25
+  font-size remify(28)
+  margin 0
+
+  &::after
+    background #262346
+    content ' '
+    display block
+    height 2px
+    margin-top remify(8)
+    width 28px
+
+.homepage-section__text
+  color #6d6d6d
+  font-size remify(14)
+  margin-top remify(17)
+
+.homepage-section__image
+  min-height 28.87vw
+  align-self stretch
+  flex-basis 40.4%
