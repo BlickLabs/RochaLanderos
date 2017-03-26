@@ -19,6 +19,7 @@ footer
   align-items flex-start
   width 90%
   center-block()
+  flex-wrap wrap
   display flex
   max-width 930px
   justify-content space-between
@@ -77,3 +78,31 @@ footer
   letter-spacing 0.8px
   padding 1.5em
   width 100%
+
+@media screen and (max-width: 1010px)
+  .footer-logo-container
+    flex-basis 100%
+    text-align center
+    margin-bottom remify(45)
+
+@media screen and (max-width: 960px)
+  .footer-inner__newsletter,
+  .footer-inner__nav
+    flex-basis 100%
+
+  .footer-inner__nav
+    justify-content center
+
+  #footer-newsletter-form
+    center-block()
+    margin-top remify(45)
+    max-width 402px
+
+@media screen and (max-width: 546px)
+  .footer-inner__nav
+    flex-wrap wrap
+    justify-content space-between
+    margin 0
+
+  .footer-inner__nav-column:not(:first-child)
+    margin-left remify(20)
