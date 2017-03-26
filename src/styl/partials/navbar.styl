@@ -1,13 +1,16 @@
 nav
-  background white
   display flex
   align-items center
   height 78px // Change
   left 0
+  padding 0 remify(50)
   position fixed
   top 0
   width 100%
   z-index 12
+
+  &.fixed
+    background #100f2e
 
   .menu-trigger,
   .mobile-logo-container
@@ -17,14 +20,13 @@ nav
     color white // Change
 
   .desktop-logo-container
-    padding-top remify(5) // Change
+    padding-top remify(16)
 
     img
-      width remify(150) // Change
+      width remify(40)
 
   .menu-container
     flex-grow 1
-    font-size remify(19) // Change
     text-align right
     height 100%
 
@@ -32,12 +34,19 @@ nav
     height 100%
 
   .menu-link
+    font-size 12px
+    letter-spacing remify(0.5)
+    color white
     display inline-block
     vertical-align middle
+    text-transform uppercase
     line-height 74px // Change
 
     &:hover, &.active
-      color white // Change
+      color #f53333
+
+    &:not(:first-child)
+      margin-left remify(38)
 
 @media screen and (max-width: 876px) // Change
   nav
