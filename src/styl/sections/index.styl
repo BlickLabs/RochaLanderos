@@ -23,3 +23,33 @@
   font-size remify(14)
   letter-spacing remify(1.9)
   text-transform uppercase
+
+.homepage-introduction
+  background white
+  padding-bottom remify(65)
+  padding-top remify(74)
+
+.homepage-introduction__text
+  color #636363
+  font-size remify(16)
+  letter-spacing remify(0.2)
+  line-height 1.38
+  max-width 581px
+  margin 0
+  center-block()
+  text-align center
+  width 90%
+
+  &::before, &::after
+    background #262346
+    center-block()
+    content ' '
+    display block
+    height 2px
+    width 28px
+
+  &::before
+    margin-bottom remify(29)
+
+  &::after
+    margin-top remify(43)
