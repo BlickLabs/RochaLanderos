@@ -2,7 +2,7 @@ var src = './src',
   dist = './dist',
   build = './build',
   bower = './bower_components',
-  package = 'rochalanderos';
+  package = 'rochalandero';
 
 module.exports = {
   paths: {
@@ -53,7 +53,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'RochaLanderos',
+    projectName: 'Rocha Landero',
     formattedName: package
   }
 };
