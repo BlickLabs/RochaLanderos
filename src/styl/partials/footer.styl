@@ -2,7 +2,7 @@ footer
   font-family 'TomaSans'
   background #eaeaea
   padding-top remify(45)
-  padding-bottom remify(37)
+  padding-bottom remify(48)
 
 .footer-logo
   width remify(48)
@@ -27,8 +27,8 @@ footer
 
 .footer-inner__nav
   display flex
-  margin-left remify(56)
-  margin-right remify(63)
+  flex-grow 1
+  margin-left remify(72)
   margin-top remify(-6)
 
 .footer-inner__nav-column
@@ -36,7 +36,7 @@ footer
   margin 0
   padding 0
 
-  &:not(:first-child)
+  &:not(.footer-inner__social):not(:first-child)
     margin-left remify(84)
 
 .footer-inner__nav-item
@@ -66,44 +66,43 @@ footer
 .footer-inner__nav-item--header
   color #0e0a23
 
-.footer-inner__newsletter
-  flex-basis 345px
+.footer-inner__social
+  simple-border('left', 1px, #0e0a2d)
+  padding-left remify(19)
+  margin-top remify(-6)
+  padding-bottom remify(10)
 
-#footer-newsletter-form input
-  background transparent
-  border solid 1px #656565
-  text-transform uppercase
-  color #656565
-  font-size 10px
-  line-height 1
-  letter-spacing 0.8px
-  padding 1.5em
-  width 100%
+@media screen and (max-width: 590px)
+  .footer-inner
+    justify-content center
 
-@media screen and (max-width: 1010px)
   .footer-logo-container
     flex-basis 100%
     text-align center
     margin-bottom remify(45)
 
-@media screen and (max-width: 960px)
-  .footer-inner__newsletter,
-  .footer-inner__nav
-    flex-basis 100%
-
-  .footer-inner__nav
-    justify-content center
-
-  #footer-newsletter-form
-    center-block()
-    margin-top remify(45)
-    max-width 402px
-
-@media screen and (max-width: 546px)
-  .footer-inner__nav
-    flex-wrap wrap
+  .footer-inner__social
+    border-left none
+    margin-top remify(20)
+    margin-left 0
+    flex-basis 205px
+    padding 0
+    display flex
     justify-content space-between
-    margin 0
+    flex-wrap wrap
 
-  .footer-inner__nav-column:not(:first-child)
-    margin-left remify(20)
+    .footer-inner__nav-item
+      flex-basis 50%
+
+      &:last-child
+        text-align right
+
+    .footer-inner__nav-item--header
+      flex-basis 100%
+      text-align center
+
+  .footer-inner__nav
+    flex-grow initial
+    flex-basis 100%
+    margin 0
+    justify-content center
