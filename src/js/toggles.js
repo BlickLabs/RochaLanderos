@@ -1,12 +1,12 @@
 (function () {
-  var carouselCreated = false;
+  var carousel = null;
 
   function createCarousel() {
-    if (!carouselCreated) {
-      $('#lawyers-carousel').slick({
+    if (carousel === null) {
+      carousel = $('#lawyers-carousel').slick({
         prevArrow: '<span class="slick-prev fa fa-angle-left"></span>',
         nextArrow: '<span class="slick-next fa fa-angle-right"></span>'
-      }).rezise();
+      });
     }
   }
 
@@ -16,9 +16,11 @@
   });
 
   $('.lawyers__item').click(function () {
+    var index = parseInt($(this).index());
     $('#lawyers-list-div').slideUp(300);
     $('#lawyers-carousel-div').slideDown(300);
     createCarousel();
+    carousel.slick('slickGoTo', index);
   });
 
   $('#lawyers-button').click(function () {
