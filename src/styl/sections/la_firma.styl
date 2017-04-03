@@ -1,0 +1,96 @@
+.lawyers__items
+  width 90%
+  center-block()
+  margin-top remify(53)
+  max-width 676px
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+
+.lawyers__item
+  flex-basis 210px
+  text-align center
+  margin-top remify(43)
+
+.lawyers__item,
+.lawyers__carousel-item-top
+  font-size 16px
+  color #636363
+  letter-spacing unit(0.2/16, 'em')
+  line-height 1.38
+
+.lawyers__item-caption-red,
+.lawyers__carousel-item-red
+  color #fc2b36
+  font-family 'TomaSans'
+  font-size 12px
+  text-transform uppercase
+  display block
+  margin-top 0.3em
+
+.lawyers__item-picture,
+.lawyers__item-img,
+.lawyers__carousel-item-img
+  width 100%
+
+.lawyers__item-picture,
+.lawyers__carousel-item-picture
+  margin 0
+
+.lawyers__item-caption
+  margin-top unit(25/16, 'em')
+
+.lawyers__cover
+  background-image url('../img/backgrounds/the-firm.jpg')
+  height 44.33vw
+  min-height 34vh
+  margin-top remify(98)
+
+.lawyers__carousel-div
+  simple-border('top', 1px, #f3f3f3)
+  margin-top remify(33)
+
+.lawyers__carousel
+  margin-top remify(121)
+
+.lawyers__carousel-item
+  width 85%
+  center-block()
+  max-width 530px
+  display flex
+  justify-content space-between
+  align-items center
+
+.lawyers__carousel-item-picture
+  flex-basis 211px
+
+.lawyers__carousel-item-info
+  flex-basis calc(100% - 235px)
+
+.lawyers__carousel-item-top
+  &::after
+    content ' '
+    height 1px
+    width 138px
+    display block
+    background #e5e5e5
+    margin-top 12px
+
+.lawyers__carousel-item-bottom
+  font-size 12.5px
+  margin-top 16px
+  color #505050
+  line-height 1.44
+
+.lawyers__carousel-item-paragraph
+  margin 0
+
+  &:not(:first-child)
+    margin-top 1.3em
+
+#lawyers-button
+  margin-bottom remify(84)
+  margin-top remify(98)
+  font-size 12px
+  center-block()
+  display block
