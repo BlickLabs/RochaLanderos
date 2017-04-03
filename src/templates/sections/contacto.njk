@@ -8,5 +8,31 @@ Contacto
 {% endblock %}
 
 {% block content %}
-
+<h1 class="section-title services-title">Contacto</h1>
+<form id="contact-form" class="contact-form" action="." method="post">
+  <div class="input-wrapper">
+    <input id="contact-form-name" class="site-input" type="text" name="name" placeholder="Nombre">
+  </div>
+  <div class="input-wrapper">
+    <input id="contact-form-email" class="site-input" type="email" name="email" placeholder="E-mail">
+  </div>
+  <div class="input-wrapper">
+    <input id="contact-form-phone" class="site-input" type="tel" name="phone" placeholder="Teléfono">
+  </div>
+  <div class="input-wrapper">
+    <textarea id="contact-form-message" class="site-input" name="message" placeholder="Mensaje"></textarea>
+  </div>
+  <div class="form-message"></div>
+  <div class="button-wrapper">
+    <button class="site-button" type="submit">Aplicar</button>
+  </div>
+  <div class="loader custom-loader">
+    <div class="ball-pulse-sync">
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+    </div>
+  </div>
+</form>
+<div class="contact-cover cover"></div>
 {% endblock %}
