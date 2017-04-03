@@ -79,8 +79,44 @@
   letter-spacing 0.2px
   text-transform uppercase
   font-size 11px
+  margin-top 2px
 
 .services-bottom-cover
   background-image url('../img/backgrounds/services-bottom.jpg')
   height 41.01vw
   min-height 40vh
+
+@media screen and (max-width: 1023px)
+  .services-subsection__items
+    justify-content space-around
+
+  .services-subsection__item
+    flex-basis 44%
+
+    &:nth-child(n+3)
+      margin-top remify(20)
+
+@media screen and (max-width: 929px)
+  .services__top-div-content,
+  .services__top-div-cover
+    flex-basis 100%
+
+  .services__top-div-content
+    padding remify(50)
+
+  .services-top-div-text
+    max-width initial
+    font-size 14px
+    letter-spacing 0.1px
+
+  .services__top-div-cover
+    height 40vw
+    min-height 30vh
+
+@media screen and (max-width: 480px)
+  .services-subsection__item
+    flex-basis 80%
+    max-width 280px
+
+    &:nth-child(n+2)
+      margin-top remify(20)
