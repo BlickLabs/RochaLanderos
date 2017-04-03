@@ -54,6 +54,24 @@
 .lawyers__carousel
   margin-top remify(121)
 
+  .slick-prev,
+  .slick-next
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    font-size remify(40)
+    color #888
+    cursor pointer
+
+  .slick-prev
+    left remify(72)
+
+  .slick-next
+    right remify(72)
+
+.lawyers__carousel-item-wrapper
+  outline none
+
 .lawyers__carousel-item
   width 70%
   center-block()
@@ -107,6 +125,13 @@
     margin-right 15px
 
 @media screen and (max-width: 699px)
+  .lawyers__carousel
+    .slick-prev
+      left remify(20)
+
+    .slick-next
+      right remify(20)
+
   .lawyers__carousel-item
     flex-wrap wrap
     justify-content center
@@ -114,3 +139,6 @@
   .lawyers__carousel-item-info
     flex-basis 100%
     margin-top 18px
+
+  #lawyers-button
+    margin-top remify(66)
