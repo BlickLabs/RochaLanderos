@@ -8,5 +8,50 @@ Careers
 {% endblock %}
 
 {% block content %}
-
+<h1 class="section-title services-title">Careers</h1>
+<div class="careers-section">
+  <div class="careers__big-container vertical-center">
+    <div class="careers__big-text">
+      <h2 class="careers__big-subtitle">¿Quieres trabajar con nosotros?</h2>
+      <button type="button" name="carrers" class="site-button">Aplicar</button>
+    </div>
+  </div>
+  <form id="careers-form" class="careers-form" action="." method="post">
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-name" class="site-input" type="text" name="name" placeholder="Nombre">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-birthday" class="site-input" type="text" name="birthday" placeholder="Fecha de nacimiento">
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-email" class="site-input" type="email" name="email" placeholder="E-mail">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-master" class="site-input" type="text" name="master" placeholder="Licenciatura">
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-phone" class="site-input" type="tel" name="phone" placeholder="Teléfono">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-languages" class="site-input" type="text" name="languages" placeholder="Idiomas">
+      </div>
+    </div>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button class="site-button" type="submit">Enviar solicitud</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}
