@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/rochalandero.libs.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Rocha Landero</title>
+    <title>
+Careers
+ - Rocha Landero</title>
   </head>
   <body>
     <div id="page">
-      <nav >
+      <nav class="sections-nav">
   <div class="desktop-logo-container">
     <a href="index.html"><img src="img/logos/logo-white.png" alt="Logo"></a>
   </div>
@@ -25,60 +27,61 @@
       <a href="index.html"><img src="img/logos/logo-white.png" alt="Logo"></a>
     </div>
     <div class="menu">
-      <a href="index.html" class="menu-link active">Inicio</a>
+      <a href="index.html" class="menu-link ">Inicio</a>
       <a href="la_firma.html" class="menu-link ">La firma</a>
       <a href="servicios.html" class="menu-link ">Servicios</a>
-      <a href="careers.html" class="menu-link ">Careers</a>
+      <a href="careers.html" class="menu-link active">Careers</a>
       <a href="contacto.html" class="menu-link ">Contacto</a>
     </div>
   </div>
 </nav>
       <main>
         
-<header class="homepage-hero cover vertical-center">
-  <div class="homepage-hero__content">
-    <h1 class="homepage-hero__title">Servicios legales de excelencia</h1>
-    <p class="homepage-hero__subtitle">Trato personalizado con <span class="red-text">nuestros clientes</span></p>
+<h1 class="section-title careers-title">Careers</h1>
+<div class="careers-section">
+  <div id="careers-top" class="careers__big-container vertical-center">
+    <div class="careers__big-text">
+      <h2 class="careers__big-subtitle">¿Quieres trabajar con nosotros?</h2>
+      <button id="careers-top-button" type="button" name="carrers" class="site-button">Aplicar</button>
+    </div>
   </div>
-</header>
-<div class="homepage-introduction">
-  <p class="homepage-introduction__text">
-    Rocha Landero Abogados, S.C. es un despacho especializado en la asesoría y patrocinio de litigios civiles, mercantiles y administrativos tanto en procedimientos judiciales inclusive el juicio de Amparo, como extrajudiciales.<br>
-    Rocha Landero Abogados trabaja en conjunto con diversos
-  </p>
-</div>
-<section class="homepage-section">
-  <div class="homepage-section__content">
-    <h2 class="homepage-section__title">Ámbito mercantil</h2>
-    <p class="homepage-section__text">
-      El despacho se especializa en el patrocinio de litigios tales como: incumplimiento de contratos, controversias de arrendamiento inmobiliario, así como todo tipo de controversias familiares y de derecho sucesorio.
-    </p>
-  </div>
-  <div class="homepage-section__image cover"></div>
-</section>
-<section class="homepage-section">
-  <div class="homepage-section__content">
-    <h2 class="homepage-section__title">Ámbito civil</h2>
-    <p class="homepage-section__text">
-      Destaca el patrocinio de litigios derivados de suscripción de títulos y contratos de crédito, conflictos societarios, y concursos mercantiles.
-    </p>
-  </div>
-  <div class="homepage-section__image cover"></div>
-</section>
-<section class="homepage-section">
-  <div class="homepage-section__content">
-    <h2 class="homepage-section__title">Ámbito administrativo</h2>
-    <p class="homepage-section__text">
-      Brinda servicios de asesoría y patrocinio en litigios en materia administrativa, tales como: procedimientos en contra de la administración pública del Distrito Federal, procedimientos licitatorios, tanto en licitaciones convocadas por el Gobierno Federal como por el Gobierno del Distrito Federal.
-    </p>
-  </div>
-  <div class="homepage-section__image cover"></div>
-</section>
-<div class="homepage-bottom cover vertical-center">
-  <div class="homepage-bottom__content">
-    <span class="homepage-bottom__line-one">Somos una</span>
-    <span class="homepage-bottom__line-two">boutique legal</span>
-  </div>
+  <form id="careers-form" class="careers-form" action="." method="post">
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-name" class="site-input" type="text" name="name" placeholder="Nombre">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-birthday" class="site-input" type="text" name="birthday" placeholder="Fecha de nacimiento">
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-email" class="site-input" type="email" name="email" placeholder="E-mail">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-master" class="site-input" type="text" name="master" placeholder="Licenciatura">
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <input id="careers-phone" class="site-input" type="tel" name="phone" placeholder="Teléfono">
+      </div>
+      <div class="input-wrapper">
+        <input id="careers-languages" class="site-input" type="text" name="languages" placeholder="Idiomas">
+      </div>
+    </div>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button class="site-button" type="submit">Enviar solicitud</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </form>
 </div>
 
       </main>
