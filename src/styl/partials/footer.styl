@@ -8,13 +8,23 @@ footer
   width remify(48)
 
 .footer-copyright
-  margin-top remify(41)
+  margin-top remify(30)
   line-height 2.6
-  letter-spacing remify(0.1)
+  letter-spacing 0.1px
   display block
   text-align center
   color #6d6d6d
   font-size 10px
+
+.footer-address
+  display block
+  font-size 12px
+  text-align center
+  color #6d6d6d
+  margin-top remify(41)
+  center-block()
+  width 90%
+  line-height 1.4
 
 .footer-inner
   align-items flex-start
@@ -92,13 +102,9 @@ footer
     flex-wrap wrap
 
     .footer-inner__nav-item
-      flex-basis 50%
-
-      &:last-child
-        text-align right
+      flex-basis 1000%
 
     .footer-inner__nav-item--header
-      flex-basis 100%
       text-align center
 
   .footer-inner__nav
