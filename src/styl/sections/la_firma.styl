@@ -44,29 +44,50 @@
 .lawyers__item-caption
   margin-top unit(25/16, 'em')
 
-.lawyers__cover
-  background-image url('../img/backgrounds/the-firm.jpg')
+.offices-carousel
   height 44.33vw
   min-height 34vh
   margin-top remify(98)
+
+  .slick-list,
+  .slick-track,
+  .offices-carousel__item
+    height 100%
+
+  .slick-prev,
+  .slick-next
+    font-size remify(80)
+    color white
+    text-shadow 0 0 remify(10) black
+
+  .slick-prev
+    left 3%
+
+  .slick-next
+    right 3%
 
 .lawyers__carousel-div
   simple-border('top', 1px, #f3f3f3)
   margin-top remify(33)
   display none
 
-.lawyers__carousel
-  margin-top remify(121)
-
+.lawyers__carousel,
+.offices-carousel
   .slick-prev,
   .slick-next
     position absolute
     top 50%
     transform translateY(-50%)
-    font-size remify(40)
-    color #888
     cursor pointer
     z-index 5
+
+.lawyers__carousel
+  margin-top remify(121)
+
+  .slick-prev,
+  .slick-next
+    font-size remify(40)
+    color #888
 
   .slick-prev
     left remify(72)
