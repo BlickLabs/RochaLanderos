@@ -15,8 +15,8 @@
     $('#careers-form').slideDown(300);
   });
 
-  $('.lawyers__item').click(function () {
-    var index = parseInt($(this).index());
+  $('.lawyers__item .site-button').click(function () {
+    var index = parseInt($(this).parent().index());
     $('#lawyers-list-div').slideUp(300);
     $('#lawyers-carousel-div').slideDown(300);
     createCarousel();
