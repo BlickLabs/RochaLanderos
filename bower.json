@@ -27,8 +27,7 @@
   "overrides": {
     "jquery-validation": {
       "main": [
-        "./dist/jquery.validate.js",
-        "./src/localization/messages_es.js"
+        "./dist/jquery.validate.js"
       ]
     },
     "font-awesome": {
