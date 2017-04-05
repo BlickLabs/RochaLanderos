@@ -21,10 +21,12 @@
     $('#lawyers-carousel-div').slideDown(300);
     createCarousel();
     carousel.slick('slickGoTo', index);
+    $(window).scrollTop(0);
   });
 
   $('#lawyers-button').click(function () {
     $('#lawyers-carousel-div').slideUp(300);
     $('#lawyers-list-div').slideDown(300);
+    $(window).scrollTop(0);
   })
 })();
