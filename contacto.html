@@ -38,9 +38,10 @@ Contacto
       <main>
         
 <h1 class="section-title services-title">Contacto</h1>
-<form id="contact-form" class="contact-form" action="." method="post">
+<form id="contact-form" class="contact-form" action="http://integrations.blick.mx/rochalandero/email/" method="post">
   <div class="input-wrapper">
     <input id="contact-form-name" class="site-input" type="text" name="name" placeholder="Nombre" required>
+    <input hidden="true" id="contact-form-name" class="site-input" type="text" name="last_name" placeholder="Nombre">
   </div>
   <div class="input-wrapper">
     <input id="contact-form-email" class="site-input" type="email" name="email" placeholder="E-mail" required>
