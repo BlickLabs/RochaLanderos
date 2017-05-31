@@ -41,6 +41,16 @@ La firma
       </figure>
       <button type="button" class="site-button">Ver más</button>
     </article>
+    <article class="lawyers__item">
+      <figure class="lawyers__item-picture">
+        <img class="lawyers__item-img" src="img/profiles/jonathantrejo.jpg" alt="Pamela Nava Loyo" />
+        <figcaption class="lawyers__item-caption">
+          Jonathan Trejo Espinoza
+          <span class="lawyers__item-caption-red">Asociado</span>
+        </figcaption>
+      </figure>
+      <button type="button" class="site-button">Ver más</button>
+    </article>
     {#<article class="lawyers__item">
       <figure class="lawyers__item-picture">
         <img class="lawyers__item-img" src="img/profiles/jorgesalazar.jpg" alt="Jorge Salazar Malda" />
@@ -89,6 +99,7 @@ La firma
   </div>
 </section>
 <section id="lawyers-carousel-div" class="lawyers__carousel-div">
+  <button id="lawyers-button">Cerrar</button>
   <div id="lawyers-carousel" class="lawyers__carousel">
     <div class="lawyers__carousel-item-wrapper">
       <article class="lawyers__carousel-item">
@@ -145,6 +156,26 @@ La firma
             <p class="lawyers__carousel-item-paragraph">
               Idiomas: Español e Inglés.<br>
               pnava@rlabogados.mx
+            </p>
+          </div>
+        </figcaption>
+      </article>
+    </div>
+    <div class="lawyers__carousel-item-wrapper">
+      <article class="lawyers__carousel-item">
+        <figure class="lawyers__carousel-item-picture"><img class="lawyers__carousel-item-img" src="img/profiles/jonathantrejo.jpg" alt="Pamela Nava Loyo" /></figure>
+        <figcaption class="lawyers__carousel-item-info">
+          <div class="lawyers__carousel-item-top">
+            <span class="lawyers__carousel-item-title">Jonathan Trejo Espinoza</span>
+            <span class="lawyers__carousel-item-red">Asociado</span>
+          </div>
+          <div class="lawyers__carousel-item-bottom">
+            <p class="lawyers__carousel-item-paragraph">
+              La Licenciada Nava obtuvo su Título Profesional por la Universidad del Valle de México en 2017.
+            </p>
+            <p class="lawyers__carousel-item-paragraph">
+              Idiomas: Español e Inglés.<br>
+              jtrejo@rlabogados.mx
             </p>
           </div>
         </figcaption>
@@ -209,6 +240,5 @@ La firma
     </article>
     </div>
   </div>
-  <button id="lawyers-button" class="site-button" type="button" name="lawyers">Ver todos</button>
 </section>
 {% endblock %}
